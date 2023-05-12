@@ -8,14 +8,44 @@
 
 /* Root */
 
+:root {
+    --header: #080b12;
+    --background: #141922;
+    --footer: #282828;
+    --secondary-text: #7a7c81;
+}
 
 
 /* Utils */
 
-
+.flex {
+    display: flex;
+}
 
 /* Generals */
 
-body {
-    background-color: blue;
+
+
+
+/******** Footer ********/
+
+footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    background-color: var(--footer);
+    height: 150px;
+}
+
+footer .wrapper {
+    padding: 0 15px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper div {
+    width: 300px;
+    height: 100px;
+    border: 2px dashed white;
 }
