@@ -35,20 +35,6 @@ body {
 
 
 
-/******** SideBar ********/
-
-aside {
-    width: 300px;
-    height: calc(100vh - 150px);
-    background-color: black;
-    position: sticky;
-    top: 0;
-    left: 0;
-    
-}
-
-
-
 
 
 /******** Main ********/
@@ -58,8 +44,8 @@ aside {
 /**** SideBar ****/
 
 aside {
-    width: 300px;
-    height: calc(100vh - 100px);
+    width: 80px;
+    height: calc(100vh - 150px);
     background-color: black;
     position: sticky;
     top: 0;
@@ -74,7 +60,7 @@ aside {
 header {
     height: 100px;
     background-color: var(--header);
-    width: calc(100vw - 300px);
+    width: calc(100vw - 80px);
     position: sticky;
     top: 0;
     left: 0;
@@ -112,4 +98,22 @@ footer .wrapper {
     width: 300px;
     height: 100px;
     border: 2px dashed white;
+}
+
+
+
+
+
+/******************************************************
+************       RESPONSIVE        ******************
+*******************************************************/
+
+@media screen and (min-width: 768px) {
+    aside {
+        width: 250px;
+    }
+
+    header {
+        width: calc(100vw - 250px);
+    }
 }
