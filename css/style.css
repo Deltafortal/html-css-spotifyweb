@@ -133,7 +133,7 @@ aside .option i {
 header {
     height: 100px;
     background-color: var(--header);
-    width: calc(100vw - 60px);
+    min-width: calc(100vw - 60px);
     position: sticky;
     top: 0;
     left: 0;
@@ -144,6 +144,7 @@ header {
     height: 100px;
     justify-content: flex-end;
     align-items: center;
+    margin-right: 15px;
 }
 
 .upgrade span {
@@ -160,6 +161,20 @@ main .wrapper{
 }
 
 
+/* Nav bar */
+
+
+.filters {
+  justify-content: center;
+}
+
+.filters ul {
+    color: var(--secondary-text);
+    margin: 25px;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 35px;
+}
 
 
 
@@ -238,6 +253,6 @@ footer .wrapper {
     /****** Header *******/
 
     header {
-        width: calc(100vw - 200px);
+        min-width: calc(100vw - 200px);
     }
 }
