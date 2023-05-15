@@ -28,7 +28,16 @@
 
 /* Generals */
 
-body {
+h2,h4 {
+    color: white;
+}
+
+h5 {
+    color: var(--secondary-text);
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -101,7 +110,6 @@ aside .option i {
 }
 
 .playlist h2 {
-    color: white;
     font-size: 20px;
     margin-bottom: 15px;
 }
@@ -177,6 +185,36 @@ main .wrapper{
 }
 
 
+.recently,.for,.popular {
+    margin: 0 15px 0 15px;
+}
+
+
+/* Recently Played */
+
+.recently h2{
+    margin-bottom: 20px;
+}
+
+.recently .list {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.card {
+    padding-right: 15px;
+    flex-basis: 50%;
+    margin-bottom: 50px;
+}
+
+.card h4,h5 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
 
 /******** Footer ********/
 
@@ -193,11 +231,6 @@ footer .wrapper {
     gap: 10px;
 }
 
-.wrapper > div {
-    width: 300px;
-    height: 100px;
-    border: 2px dashed white;
-}
 
 
 
@@ -249,10 +282,24 @@ footer .wrapper {
     }
 
 
-
     /****** Header *******/
 
     header {
         min-width: calc(100vw - 200px);
+    }
+
+
+    /**Recently **/
+    .card {
+        flex-basis: 25%;
+    }
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    .card {
+        flex-basis: calc(100% / 6);
     }
 }
