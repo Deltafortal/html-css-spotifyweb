@@ -40,19 +40,85 @@ body {
 /******** Main ********/
 
 
+main .wrapper {
+    background-color: var(--background);
+}
+
 
 /**** SideBar ****/
 
 aside {
-    width: 80px;
+    width: 60px;
     height: calc(100vh - 150px);
     background-color: black;
     position: sticky;
     top: 0;
     left: 0;
-    
+    color: var(--secondary-text);
 }
 
+/* Logo */
+
+.logo .logo-large {
+    display: none;
+    padding: 15px;
+    width: 180px;
+    margin: 0 auto;
+}
+
+
+.logo .logo-small {
+    width: 30px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* Nav Menu */
+
+aside .option {
+    text-align: center;
+}
+
+aside .option span {
+    display: none;
+}
+
+aside .option i {
+    padding: 10px 5px 10px 5px;
+    font-size: 20px;
+   
+}
+
+/* Playlist */
+
+.playlist{
+    display: none;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.playlist h2 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+
+.new-playlist i {
+    background-color: var(--secondary-text);
+    padding: 10px;
+    color: black;
+    margin-right: 5px;
+}
+
+.your-playlist{
+    margin-top: 10px;
+}
+
+.your-playlist div {
+    padding-top: 10px;
+    font-size: 15px;
+}
 
 
 /* Header */
@@ -60,7 +126,7 @@ aside {
 header {
     height: 100px;
     background-color: var(--header);
-    width: calc(100vw - 80px);
+    width: calc(100vw - 60px);
     position: sticky;
     top: 0;
     left: 0;
@@ -78,10 +144,6 @@ main .wrapper{
 /******** Footer ********/
 
 footer {
-    position: sticky;
-    left: 0;
-    bottom: 0;
-    z-index: 1;
     background-color: var(--footer);
     height: 150px;
 }
@@ -109,11 +171,51 @@ footer .wrapper {
 *******************************************************/
 
 @media screen and (min-width: 768px) {
+
+    /******* Aside ********/
+
     aside {
-        width: 250px;
+        width: 200px;
     }
 
+
+    /* Logo */ 
+    .logo .logo-small {
+        display: none;
+    }
+
+    .logo .logo-large {
+        display: block;
+    }
+
+    /* Nav Menu */
+
+    aside .option {
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    aside .option span {
+        display: inline;
+       
+    }
+
+    aside .option i,
+    aside .option span {
+        font-size: 15px;
+    }
+
+    /* Playlist */
+
+    .playlist {
+        display: block;
+    }
+
+
+
+    /****** Header *******/
+
     header {
-        width: calc(100vw - 250px);
+        width: calc(100vw - 200px);
     }
 }
