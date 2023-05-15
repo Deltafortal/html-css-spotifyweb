@@ -57,6 +57,7 @@ aside {
     color: var(--secondary-text);
 }
 
+
 /* Logo */
 
 .logo .logo-large {
@@ -73,6 +74,7 @@ aside {
     padding-top: 10px;
 }
 
+
 /* Nav Menu */
 
 aside .option {
@@ -88,6 +90,7 @@ aside .option i {
     font-size: 20px;
    
 }
+
 
 /* Playlist */
 
@@ -121,7 +124,11 @@ aside .option i {
 }
 
 
-/* Header */
+
+
+
+
+/******** Header ********/
 
 header {
     height: 100px;
@@ -132,6 +139,21 @@ header {
     left: 0;
     
 }
+
+.upgrade{
+    height: 100px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade span {
+    color: white;
+    border: solid 2px white;
+    padding: 10px 35px;
+    border-radius: 40px;
+}
+
+
 
 main .wrapper{
     overflow-y: auto;
@@ -156,7 +178,7 @@ footer .wrapper {
     gap: 10px;
 }
 
-.wrapper div {
+.wrapper > div {
     width: 300px;
     height: 100px;
     border: 2px dashed white;
