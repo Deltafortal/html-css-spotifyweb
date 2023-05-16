@@ -221,11 +221,15 @@ main .wrapper{
 }
 
 
+
+
+
 /******** Footer ********/
 
 footer {
     background-color: var(--footer);
     height: 150px;
+    color: white;
 }
 
 footer .wrapper {
@@ -236,9 +240,105 @@ footer .wrapper {
     gap: 10px;
 }
 
+.curr-song,
+.options {
+    flex-basis: 25%;
+}
+
+.play-buttons {
+    flex-basis: 50%;
+}
+
+/* Currently Played */
 
 
+footer img {
+    width: 50px;
+}
 
+.curr-song {
+    align-items: center;
+}
+
+.curr-song i {
+    color: var(--secondary-text);
+    padding-left: 15px;
+    padding-top: 5px;
+    display: block;
+}
+
+footer .content {
+    margin-left: 5px;
+}
+
+
+/* Play Buttons */
+
+
+.play-buttons {
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.play-buttons i {
+    padding: 5px;
+    font-size: 15px;
+}
+
+.play-buttons i:nth-child(3) {
+    font-size: 20px;
+}
+
+
+.loading-bar span {
+    font-size: 12px;
+}
+
+
+.full-bar {
+    width: 65%;
+}
+
+.loaded-bar {
+    transform: translate(83px,-9px);
+    width: 10%;
+}
+
+
+/* Common */
+
+.full-bar,
+.sound-bar {
+    display: inline-block;
+    height: 5px;
+    background-color: #525252;
+}
+
+
+.loaded-bar,
+.sound-level {
+    height: 5px;
+    background-color: rgb(172, 172, 172);
+}
+
+/* Options */
+
+footer .options {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.sound-bar {
+    width: 50px;
+}
+
+.sound-level {
+    transform: translatey(-9px);
+    width: 20%;
+}
 
 
 /******************************************************
