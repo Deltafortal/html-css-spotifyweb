@@ -192,11 +192,11 @@ main .wrapper{
 
 /* Recently Played */
 
-.recently h2{
+.wrapper h2{
     margin-bottom: 20px;
 }
 
-.recently .list {
+.wrapper .list {
     flex-grow: 1;
     flex-wrap: wrap;
     flex-shrink: 0;
@@ -204,16 +204,21 @@ main .wrapper{
 
 .card {
     padding-right: 15px;
+    padding-top: 15px;
     flex-basis: 50%;
     margin-bottom: 50px;
 }
 
-.card h4,h5 {
+.card h4,
+.card h5 {
     padding-top: 10px;
     text-align: center;
 }
 
 
+.popular img {
+    border-radius: 50%;
+}
 
 
 /******** Footer ********/
